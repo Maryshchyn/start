@@ -58,6 +58,7 @@ list-style: none;
         color: #FFF;
 }
 .hero-btn{
+        font-family: inherit;
         font-size: 16px;
         font-weight: 700;
         line-height: 1.87;
