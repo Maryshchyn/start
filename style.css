@@ -1,0 +1,156 @@
+:root{
+    --white-color-text: #ffffff;
+}
+
+
+
+
+body{
+    font-family: Roboto, sans-serif;
+}
+.list{
+list-style: none;
+}
+.item{
+    text-decoration: none;
+}
+.logo{
+    
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.78px;
+        color: #000;
+}
+.logo-span{    
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.78px;
+        color: #2196F3;
+}
+.header-link{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2.14;
+        letter-spacing: 0.28px;
+        color: #212121;
+}
+.header-adress{
+    font-size: 14px;
+        font-weight: 500;
+        line-height: 2.14;
+        letter-spacing: 0.28px;
+        color: #757575;
+}
+/* hero */
+.hero{
+    background-color: #2F303A;
+}
+.hero-title{       
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        color: #FFF;
+}
+.hero-btn{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        color: #FFF;
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+/*About-us*/
+.about-title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: #212121;
+}
+.about-description{
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    color: #757575;
+}
+/* work */
+.work-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 0.83;
+        letter-spacing: 1.08px;
+        color: #212121;
+}
+/* us */
+.us-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 0.83;
+        letter-spacing: 1.08px;
+        color: #212121;
+}
+.us-name{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.87;
+        letter-spacing: 0.48px;
+        color: #212121;
+}
+.us-description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.87;
+        letter-spacing: 0.48px;
+        color: #757575;
+}
+/* footer */
+.footer{
+    background-color: #2F303A;
+}
+.footer-address{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        color: #FFF;
+}
+.footer-telmail{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        color: rgba(255, 255, 255, 0.60);
+}
+/* portfolio--------------------------------------------------------------------------- */
+
+.portfolio-btn{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.48px;
+        color: #212121;
+}
+.card-name{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 0.5;
+        letter-spacing: 1.08px;
+        color: #212121;
+}
+.card-description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 0.53;
+        letter-spacing: 0.48px;
+        color: #757575;
+}
