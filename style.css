@@ -507,6 +507,8 @@ background-color: var(--logo-hover-btn);
 .card-info{
         padding: 20px 24px;
 }
+
+
 .card-name {
         font-size: 18px;
         font-weight: 700;
@@ -514,6 +516,7 @@ background-color: var(--logo-hover-btn);
         letter-spacing: 1.08px;
         color: #212121;
         margin-bottom: 4px;
+        
 }
 
 .card-description {
@@ -530,9 +533,34 @@ background-color: var(--logo-hover-btn);
         margin-bottom: -50px;
 }
 .cards-items{
+        position: relative;
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
         margin-bottom: 50px;
+}
+.cards-items:hover .card-window{
+        transform: translateY(0);
+}
+.card-wrapper{
+        position: relative;
+        overflow: hidden;
+}
+
+.card-window {
+        height: 100%;
+        width: 100%;
+        background-color: var(--logo-hover-btn);
+        top: 0;
+        left: 0;
+        position: absolute;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.55;
+        letter-spacing: 0.54px;
+        padding: 63px 24px;   
+        transform: translateY(100%);     
+        transition: transform 120ms;
 }
 .cards-items:hover{
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
