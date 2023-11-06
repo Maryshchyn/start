@@ -20,7 +20,7 @@
     <nav class="header-nav">
         <a href="./index.html" class="logo item"><span class="logo-span">Web</span>Studio</a>
         <ul class="list nav-list">
-            <li class="nav-items"><a href="./index.html" class="header-link item">Студия</a></li>
+            <li class="nav-items"><a href="./index.html" class="header-link current-link item">Студия</a></li>
             <li class="nav-items"><a href="./portfolio.html" class="header-link item">Портфолио</a></li>
             <li class="nav-items"><a href="" class="header-link item">Контакты</a></li>
         </ul>
@@ -388,15 +388,71 @@
         </ul>
     
     </div>
+    <div class="subscription">
+        <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+        <form class="subscription-form">
+            <input type="text" class="subscription-input" placeholder="E-mail">
+            <button class="subscription-btn" type="submit">Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                    <use href="./photos/icons/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
     </div>
 </footer>
+<!-- modal -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-cruse">
-                <use href="./photos/icons/symbol-defs.svg#icon-close-black-18dp-2-1" width="18" height="18"></use>
+            <svg class="modal-cruse" width="18" height="18">
+                <use href="./photos/icons/symbol-defs.svg#icon-close-black-18dp-2-1" ></use>
             </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+            <label for="name" class="form-label">Имя</label>
+            <div class="icon-wrapper">
+                <input type="text" id="name" name="name" class="form-input">
+                <svg width="18" height="18" class="modal-icon">
+                    <use href="./photos/icons/modal/symbol-defs.svg#icon-person"></use>
+                </svg>
+            </div>
+            <label for="tel" class="form-label">Телефон</label>
+            <div class="icon-wrapper">
+                <input type="tel" id="tel" name="tel" class="form-input">
+                <svg width="18" height="18" class="modal-icon">
+                    <use href="./photos/icons/modal/symbol-defs.svg#icon-phone"></use>
+                </svg>
+            </div>
+            <label for="email" class="form-label">Имя</label>
+            <div class="icon-wrapper">
+                <input type="email" id="email" name="email" class="form-input">
+                <svg width="18" height="18" class="modal-icon">
+                    <use href="./photos/icons/modal/symbol-defs.svg#icon-email"></use>
+                </svg>
+            </div>
+            <label for="text" class="form-label">Комментарий</label>
+            <textarea name="text" id="text" class="modal-text" placeholder="Введите текст"></textarea>
+            <div class="description-field">
+
+
+                <input class="modal-check visually-hidden" type="checkbox" width="16" height="15" name="value" value="agree" id="description">
+                <label class="modal-text-check " for="description">
+
+                    <span class="span">
+                        <svg class="checked-icon" width="15" height="14">
+                            <use href="./photos/icons/modal/symbol-defs.svg#checkmark"></use>
+                        </svg>
+                    </span> Соглашаюсь с рассылкой и принимаю <span class="checked-description">Условия договора</span>
+                    
+                    </label>
+
+
+
+            </div>
+            <button type="submit" class="modal-btn">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
