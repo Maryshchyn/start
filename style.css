@@ -71,16 +71,16 @@ list-style: none;
         padding-bottom: 25px;
         border-bottom: 1px solid var(--border-header);
 }
-.header .container {
+.header-container {
         display: flex;
 }
 .header-nav{
         display: flex;
 }
-.nav-list{
+.header-nav__list{
         display: flex;
 }
-.logo{
+.header-nav__logo{
         margin-right: 93px;
         font-family: Raleway;
         font-size: 26px;
@@ -97,17 +97,17 @@ list-style: none;
         letter-spacing: 0.78px;
         color: var(--logo-hover-btn);
 }
-.nav-items:not(:last-child){
+.header-nav__items:not(:last-child){
         margin-right: 50px;
 }
-.nav-items{
+.header-nav__items{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
 }
 
-.header-link{
+.header-nav__link{
         position: relative;
         display: flex;
         font-size: 14px;
@@ -119,8 +119,8 @@ list-style: none;
         flex-direction: column;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover,
-.header-link:focus{
+.header-nav__link:hover,
+.header-nav__link:focus{
         color: var(--logo-hover-btn);
         
 }
@@ -136,7 +136,7 @@ list-style: none;
         opacity: 1;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link::after {
+.header-nav__link::after {
         position: absolute;
         content: "";
         display: flex;
@@ -148,23 +148,23 @@ list-style: none;
         opacity: 0;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover:after{
+.header-nav__link:hover:after{
         opacity: 1;
         width: 100%;
 }
-.address{
+.header-address{
         margin-left: auto;
 }
-.address-list{
+.header-address__list{
         display: flex;
         
 }
 
-.address-item:not(:last-child){
+.header-address__item:not(:last-child){
         margin-right: 30px;
 }
 
-.header-address{
+.header-address__link{
         font-size: 14px;
         font-weight: 500;
         line-height: 2.14;
@@ -173,13 +173,14 @@ list-style: none;
         fill: var(--dark-color-text);
         display: flex;
         align-items: center;
+        transition: 250ms;
 }
-.header-address:hover,
-.header-address:focus{
+.header-address__link:hover,
+.header-address__link:focus{
         color:var(--logo-hover-btn);
         fill: #2196F3;
 }
-.address-icon{
+.header-address__icon{
         margin-right: 10px;
         flex-shrink: 0;
 }
