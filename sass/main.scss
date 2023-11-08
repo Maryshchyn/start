@@ -1,3 +1,13 @@
-body{
-    background-color: rgb(108, 209, 147);
-}
+
+@import './utils/colors';
+@import './utils/reset';
+@import './utils/base';
+@import './components/header';
+@import './components/hero';
+@import './components/advantage';
+@import './components/work';
+@import './components/us';
+@import './components/client';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/modal';

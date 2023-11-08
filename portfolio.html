@@ -11,33 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
         <!-- Header -->
         <header class="header">
-            <div class="container">
+            <div class="container header-container">
                 <nav class="header-nav">
-                    <a href="./index.html" class="logo item"><span class="logo-span">Web</span>Studio</a>
-                    <ul class="list nav-list">
-                        <li class="nav-items"><a href="./index.html" class="header-link item">Студия</a></li>
-                        <li class="nav-items"><a href="./portfolio.html" class="header-link current-link item">Портфолио</a></li>
-                        <li class="nav-items"><a href="#contacts" class="header-link item">Контакты</a></li>
+                    <a href="./index.html" class="header-nav__logo item"><span class="logo-span">Web</span>Studio</a>
+                    <ul class="list header-nav__list">
+                        <li class="header-nav__items"><a href="./index.html"
+                                class="header-nav__link current-link item">Студия</a></li>
+                        <li class="header-nav__items"><a href="./portfolio.html" class="header-nav__link item">Портфолио</a>
+                        </li>
+                        <li class="header-nav__items"><a href="" class="header-nav__link item">Контакты</a></li>
                     </ul>
                 </nav>
-                <address class="address">
-                    <ul class="list address-list">
-                        <li class="address-item">
-                            <a href="mailto:info@devstudio.com" class="header-address item">
-                                <svg width="16" height="12" class="address-icon">
+                <address class="header-address">
+                    <ul class="list header-address__list">
+                        <li class="header-address__item">
+                            <a href="mailto:info@devstudio.com" class="header-address__link item">
+                                <svg width="16" height="12" class="header-address__icon">
                                     <use href="./photos/icons/header/symbol-defs.svg#icon-envelope"></use>
                                 </svg>
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="address-item">
-                            <a href="tel:+380961111111" class="header-address item">
-                                <svg width="10" height="16" class="address-icon">
+                        <li class="header-address__item">
+                            <a href="tel:+380961111111" class="header-address__link item">
+                                <svg width="10" height="16" class="header-address__icon">
                                     <use href="./photos/icons/header/symbol-defs.svg#icon-smartphone"></use>
                                 </svg>
                                 +38 096 111 11 11
@@ -72,17 +74,19 @@
                             получить
                             исчерпывающие сведения о компании или частном лице.</p>
                         </div>
-                        
-                        
-                            
                         <div class="card-info">
                         <h3 class="card-name">Технокряк</h3>
                         <p class="card-description">Веб-сайт</p>
                         </div>
-                       
                     </li>
                     <li class="cards-items">
+                        <div class="card-wrapper">
                         <img src="./photos/portfolio/2.jpg" width="370" alt="Дизайн">
+                        <p class="card-window">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                            позволит посетителю
+                            получить
+                            исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
                         <div class="card-info">
                         <h3 class="card-name">Постер New Orlean vs Golden Star</h3>
                         <p class="card-description">Дизайн</p>
@@ -149,7 +153,7 @@
                     <a href="./index.html" class="footer-logo item"><span class="footer-logo-span">Web</span>Studio</a>
                     <address class="footer-address">
         
-                        <ul class="footer-list list" id="contacts">
+                        <ul class="footer-list list">
                             <li class="footer-items">
                                 <p class="footer-city ">г. Киев, пр-т Леси Украинки, 26</p>
                             </li>
@@ -197,6 +201,17 @@
                         </li>
                     </ul>
         
+                </div>
+                <div class="subscription">
+                    <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+                    <form class="subscription-form">
+                        <input type="text" class="subscription-input" placeholder="E-mail">
+                        <button class="subscription-btn" type="submit">Подписаться
+                            <svg class="subscription-icon" width="24" height="24">
+                                <use href="./photos/icons/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
