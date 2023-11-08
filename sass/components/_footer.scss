@@ -14,7 +14,7 @@
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.78px;
-    color: var(--logo-text);
+    color: var(--white-color-text);
 }
 
 .footer-logo-span {
@@ -41,7 +41,7 @@
     color: var(--white-color-text);
 }
 
-.footer-telmail {
+.footer-link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
@@ -84,12 +84,14 @@
     align-items: center;
     border-radius: 50%;
     fill: var(--white-color-text);
+    transition: background-color 250ms;
+
+    &:hover,
+    &:focus{
+        background-color: var(--logo-hover-btn);
+    }
 }
 
-.column-link:hover,
-.column-link:focus {
-    background-color: var(--logo-hover-btn);
-}
 
 .subscription {
     margin-left: 93px;
@@ -145,6 +147,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
 
 .subscription-icon {

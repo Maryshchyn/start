@@ -532,10 +532,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   fill: #afb1b8;
+  -webkit-transition: border-color 250ms, fill 250ms;
+  transition: border-color 250ms, fill 250ms;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border-color: var(--logo-hover-btn);
   fill: var(--logo-hover-btn);
 }
@@ -558,7 +559,7 @@ body {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.78px;
-  color: var(--logo-text);
+  color: var(--white-color-text);
 }
 
 .footer-logo-span {
@@ -585,7 +586,7 @@ body {
   color: var(--white-color-text);
 }
 
-.footer-telmail {
+.footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -640,10 +641,11 @@ body {
           align-items: center;
   border-radius: 50%;
   fill: var(--white-color-text);
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 
-.column-link:hover,
-.column-link:focus {
+.column-link:hover, .column-link:focus {
   background-color: var(--logo-hover-btn);
 }
 
@@ -713,6 +715,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: none;
+  cursor: pointer;
 }
 
 .subscription-icon {
@@ -930,8 +933,8 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
   outline: none;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250 cubic-bezier(0.4, 0, 0.2, 1), fill 10000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250 cubic-bezier(0.4, 0, 0.2, 1), fill 10000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
@@ -993,11 +996,6 @@ body {
           justify-content: center;
 }
 
-/* .modal-check {
-        margin-right: 8px;
-        width: 16px;
-        height: 15px;
-} */
 .modal-text-check {
   font-size: 14px;
   font-weight: 400;

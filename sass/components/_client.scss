@@ -1,6 +1,7 @@
-.clients .container {
-    padding-top: 94px;
+.clients  {
+    & .container{padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .client-title {
@@ -19,8 +20,10 @@
     justify-content: center;
 }
 
-.client-item+.client-item {
+.client-item {
+    & + .client-item{
     margin-left: 30px;
+    }
 }
 
 .client-link {
@@ -32,10 +35,12 @@
     justify-content: center;
     align-items: center;
     fill: #afb1b8;
+    transition: border-color 250ms, fill 250ms;
+
+    &:hover,
+    &:focus{
+        border-color: var(--logo-hover-btn);
+        fill: var(--logo-hover-btn);
+    }
 }
 
-.client-link:hover,
-.client-link:focus {
-    border-color: var(--logo-hover-btn);
-    fill: var(--logo-hover-btn);
-}
