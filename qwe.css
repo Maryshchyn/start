@@ -1,0 +1,7 @@
+.title[title] {
+    color: maroon;
+}
+
+.title.headline[title] {
+    color: navy;
+}
