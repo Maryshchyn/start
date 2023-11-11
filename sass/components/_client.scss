@@ -1,46 +1,90 @@
-.clients  {
-    & .container{padding-top: 94px;
-    padding-bottom: 94px;
-    }
+// .clients  {
+//     & .container{padding-top: 94px;
+//     padding-bottom: 94px;
+//     }
+// }
+
+// .client-title {
+//     font-size: 36px;
+//     font-weight: 700;
+//     line-height: normal;
+//     letter-spacing: 1.08px;
+//     color: #212121;
+//     text-align: center;
+//     margin-bottom: 50px;
+
+// }
+
+// .client-list {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .client-item {
+//     & + .client-item{
+//     margin-left: 30px;
+//     }
+// }
+
+// .client-link {
+//     width: 170px;
+//     height: 92px;
+//     border-radius: 4px;
+//     border: 1px solid #AFB1B8;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     fill: #afb1b8;
+//     transition: border-color 250ms, fill 250ms;
+
+//     &:hover,
+//     &:focus{
+//         border-color: var(--logo-hover-btn);
+//         fill: var(--logo-hover-btn);
+//     }
+// }
+
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.client-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+.clients-title {
     color: #212121;
     text-align: center;
-    margin-bottom: 50px;
-
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 .client-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+
 }
 
-.client-item {
-    & + .client-item{
-    margin-left: 30px;
-    }
-}
-
-.client-link {
-    width: 170px;
-    height: 92px;
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: #afb1b8;
-    transition: border-color 250ms, fill 250ms;
-
-    &:hover,
-    &:focus{
-        border-color: var(--logo-hover-btn);
-        fill: var(--logo-hover-btn);
-    }
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    height: 92px;
+    margin: 15px;
+    
 }
+// .clients-item:nth-child(2n){
+//     margin-left: 30px;
+// }
+// .clients-item:not(:nth-last-child(-n+2)){
+//     margin-bottom: 30px;
+// }
 
+.clients-icon {
+    fill: #AFB1B8;
+    
+}
