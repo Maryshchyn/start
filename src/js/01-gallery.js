@@ -2,5 +2,5 @@
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-console.log(galleryItems);
-console.log('qwe')
+// console.log(galleryItems);
+console.log('object');
